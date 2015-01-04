@@ -1,6 +1,8 @@
+%define _buildid .2
+
 Name:       perl-namespace-autoclean
 Version:    0.19
-Release:    1%{?dist}
+Release:    1%{?_buildid}%{?dist}
 License:    GPL+ or Artistic
 Group:      Development/Libraries
 Summary:    Keep imports out of your namespace
