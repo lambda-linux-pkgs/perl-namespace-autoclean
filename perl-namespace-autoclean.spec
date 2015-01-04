@@ -77,6 +77,12 @@ perl Build.PL --installdirs=vendor
 %{_mandir}/man3/namespace::autoclean.3pm*
 
 %changelog
+* Sun Jan 04 2015 Rajiv M Ranganath <rajiv.ranganath@atihita.com> 0.19-1
+- Adapt for AL/LL
+- Add package support URL
+- Update spec file
+- Import source package EPEL7/perl-namespace-autoclean-0.19-1.el7
+
 * Thu Aug 14 2014 Paul Howarth <paul@city-fan.org> - 0.19-1
 - Update to 0.19
   - Bump dependency on B::Hooks::EndOfScope, to get the separation of pure-perl
