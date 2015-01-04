@@ -10,7 +10,7 @@ BuildArch:  noarch
 
 # Module Build
 BuildRequires:  perl
-BuildRequires:  perl(Module::Build::Tiny) >= 0.036
+BuildRequires:  perl(Module::Build)
 # Module
 BuildRequires:  perl(B::Hooks::EndOfScope) >= 0.12
 BuildRequires:  perl(List::Util)
@@ -33,17 +33,9 @@ BuildRequires:  perl(version)
 BuildRequires:  perl(Class::MOP)
 BuildRequires:  perl(CPAN::Meta)
 BuildRequires:  perl(CPAN::Meta::Requirements) >= 2.120900
-%if 0%{?fedora} || 0%{?rhel} > 7
+%if 0%{?fedora} || 0%{?rhel} > 7 || 0%{?amzn}
 BuildRequires:  perl(Moo) >= 1.000007
 %endif
-BuildRequires:  perl(Moose) >= 0.56
-BuildRequires:  perl(Moose::Role)
-%if 0%{?fedora} || 0%{?rhel} > 7
-BuildRequires:  perl(MooseX::MarkAsMethods)
-%endif
-BuildRequires:  perl(MooseX::Role::WithOverloading) >= 0.09
-BuildRequires:  perl(Mouse)
-BuildRequires:  perl(Sub::Name)
 # Runtime
 Requires:       perl(:MODULE_COMPAT_%(eval "`perl -V:version`"; echo $version))
 Requires:       perl(Sub::Identify)
