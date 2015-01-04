@@ -43,6 +43,9 @@ Requires:       perl(Sub::Identify)
 %{?perl_default_filter}
 
 %description
+For package support, please visit
+https://github.com/lambda-linux-pkgs/%{name}/issues
+
 When you import a function into a Perl package, it will naturally also be
 available as a method. The 'namespace::autoclean' pragma will remove all
 imported symbols at the end of the current package's compile cycle. Functions
